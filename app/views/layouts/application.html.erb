@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsApz</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div id="navbar">
+      <ul class="nav navbar-nav">
+        <%= link_to('Rails Apz', '/', class: 'navbar-brand') %>
+        <li><%= link_to('Articles', articles_path) %></li>
+        <li><%= link_to('Authors', authors_path) %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="container" class="container">
+  <%= yield %>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
