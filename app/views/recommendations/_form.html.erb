@@ -1,9 +1,6 @@
 <%= render 'layouts/flash' %>
-
 <%= simple_form_for([@article, @recommendation]) do |f| %>
-
   <%= f.input :email %>
-
+  <%= recaptcha_tags %>
   <%= f.button :submit, class: 'btn btn-primary' %>
-
 <% end %>
