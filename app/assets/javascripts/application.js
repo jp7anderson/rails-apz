@@ -70,11 +70,7 @@ $(document).on('page:load', ready);
 function weather() {
 
   $.getJSON("/weather", function(data) {
-
     var datetime = new Date(data.datetime*1000);
-
     $('#weather').html('Sao Paulo: ' + data.main.temp + ' Celsius - Last update: ' + datetime.toString());
-
   });
-
 }

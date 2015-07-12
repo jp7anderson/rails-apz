@@ -10,16 +10,16 @@ development:
 
   <<: *default
 
-  database: db/rails_apz_dev
+  database: rails_apz_dev
 
 test:
 
   <<: *default
 
-  database: db/rails_apz_test
+  database: rails_apz_test
 
 production:
 
   <<: *default
 
-  database: db/rails_apz_prod
+  database: rails_apz_prod
